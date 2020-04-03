@@ -1,0 +1,91 @@
+#home{
+    background: url('../../assests/image/background.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+    section{
+        background: rgba(0,0,0,0.7);
+        padding-left: $md;
+        padding-right: $md;
+        height: 80%;
+        width: 35%;
+        border-radius: 10px;
+    }
+
+    .cube{
+        color:$orange;
+        font-size: 8rem;
+    }
+
+    .cube{
+        font-size: $xxl;
+        color: $orange;
+    }
+
+    h1{
+        text-align: center;
+        color: $off-white;
+        font-size: $lg;
+    }
+    .play-button-container{
+        width: 100%;
+    }
+    a.play-button{
+        background-color: $green;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        border-radius: $button-radius;
+        text-align: center;
+        transition: 0.3s linear all;
+    }
+    a.play-button:hover{
+        background-color: darken($green, 10%);
+        box-shadow: $shadow;
+    }
+    .auth-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+
+    #login-button{
+        background-color:$red;
+        
+    }
+    #login-button:hover{
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+    #signup-button{
+        background-color: $blue;
+    }
+    #signup-button:hover{
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+    .auth-container .auth-buttons{
+        color: #fff;
+        cursor: pointer;
+        border-radius: 30px;
+        padding: $normal 0;
+        text-align: center;
+        width: 45%;
+        margin-top: $lg;
+        transition: 0.3s linear all;
+    }
+}
+
+@media(max-width:768px){
+    #home section{
+        padding: 0 $normal;
+        width: 100%;
+        height:100%;
+    }
+}

@@ -1,0 +1,63 @@
+.summary-container{
+    width: 55%;
+    margin: 0 auto 20px;
+    padding: 10px;
+
+    .success-icon{
+        color: $green;
+        font-size: 5rem;
+        margin-bottom: -100px;
+
+    }
+    h1{
+        color: $green;
+        margin-top: -30px;
+        font-size: 4rem;
+    }
+
+    .container{
+        width: 100%;
+        background-color: $off-white;
+        padding: 20px 30px;
+    }
+    h4{
+        font-size: $md;
+        text-align: center;
+    }
+    h2{
+        font-size: 3rem;
+        text-align: center;
+        color: $blue;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 50%;
+        
+    }
+    ul li{
+           
+            margin: 20px;
+            cursor: pointer;
+        }
+
+    .back{
+        border: 1px solid $green;
+        padding: 8px;
+    }
+    .back:hover{
+        background-color: darken($green, 10%);
+        color: $off-white !important;
+    }
+    .take:hover{
+        background-color: darken($blue, 10%);
+        color: $off-white !important;
+    }
+
+    .take{
+        border: 1px solid $blue !important;
+        padding: 8px;
+    }
+
+}
